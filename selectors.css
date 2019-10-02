@@ -1,6 +1,7 @@
 header {
   border: 1px solid goldenrod;
   align-items: center;
+  padding: 25px
 }
 
 nav {
@@ -12,9 +13,7 @@ nav {
   color: yellow;
 }
 
-a .disabled {
-  color: purple;
-}
+
 
 /* /* /* .parent * div {
   color: red;      
@@ -47,14 +46,32 @@ a .disabled {
   background-color: blue;
 }
 
-.grandparent h4 {
+.grandparent > h4 {
+  border: 1px solid black;
   border-radius: 1px;
 }
 
 .promo {
   font-weight: bold;
+  color: gold;
 }
 
 footer span input {
   height: 25px;
+}
+
+a > .disabled {
+  color:gray;
+}
+
+a > div > .disabled {
+  color:gray;
+}
+
+span > .disabled {
+  color:gray;
+}
+
+a.disabled {
+  color: purple;
 }
